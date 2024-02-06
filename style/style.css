@@ -1,0 +1,164 @@
+/* styles.css */
+/* Importing IBM Plex Mono font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #E8F0CB;
+    /* width: 1280px; */
+    margin: 0 auto;
+    position: relative; /* Added relative positioning to the body */
+    min-height: 100vh; /* Ensures the body takes up at least the full height of the viewport */
+  }
+  
+  header {
+    background-color: transparent;
+    padding: 20px;
+    width: 1280px; 
+    margin: 0 auto; 
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: black;
+    height: 130px;
+    width: 130px;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    color: green;
+  }
+  
+  .hero {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 20px;
+    width: 1280px;
+  }
+  .hero-image {
+    animation: slideUpDown 0.8s ease-in-out infinite alternate; /* Adjusted animation duration */
+  }
+  
+  @keyframes slideUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .container {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    width: 1280px;
+  }
+  
+  .card-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Changed from space-around */
+    flex-wrap: wrap; /* Allow cards to wrap */
+    margin: 0 auto;
+    align-items: center;
+    width: 80vw;
+  }
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+
+
+  
+  .card {
+    width: calc(20% - 20px); /* 20% width for each card with 10px padding on each side */
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  min-height: 300px;
+  }
+  
+  .card-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    position: relative;
+    left: 0%;
+    top: -60px;
+    margin-bottom: -25px;
+  }
+  
+  .card-header {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .card-content {
+    font-size: 14px;
+  }
+
+  
+  footer {
+    color: gray;
+    text-align: center;
+    padding: 20px;
+    position: relative; 
+    bottom: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    border-style: solid;
+    border-width: 1px;
+    border-color: green;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: transparent;
+  }
+  
+
+
+  
+
+
+
